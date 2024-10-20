@@ -1,0 +1,120 @@
+/* Gallery.css */
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto; /* Centers the gallery container */
+  max-width: 1200px; /* Controls the max width */
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.tab.active {
+  color: #f89d03;
+  border-bottom: 2px solid #f89d03;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Ensure carousel takes up the full width of the container */
+}
+
+.carousel-images {
+  padding: 1rem;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensures images wrap on smaller screens */
+}
+
+.carousel-image {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-image:hover {
+  transform: scale(1.05); /* Add a hover effect for a slight zoom */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a hover shadow */
+}
+
+.prev-btn,
+.next-btn {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker button background with transparency */
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: rgba(0, 0, 0, 1); /* Darken on hover */
+}
+
+.prev-btn {
+  left: -50px;
+}
+
+.next-btn {
+  right: -50px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .carousel-images {
+    gap: 5px; /* Smaller gap on smaller screens */
+  }
+
+  .prev-btn,
+  .next-btn {
+    padding: 5px;
+    font-size: 1rem;
+    left: -30px;
+    right: -30px;
+  }
+
+  .carousel-image {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-image {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .prev-btn,
+  .next-btn {
+    padding: 3px;
+    font-size: 0.8rem;
+    left: -20px;
+    right: -20px;
+  }
+}

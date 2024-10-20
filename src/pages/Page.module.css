@@ -1,0 +1,49 @@
+.containers {
+  position: relative; 
+  z-index: 2; 
+  margin-top: 93vh;
+  padding: 20px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  box-sizing: border-box;
+  transition: transform 0.5s ease-in-out;
+
+
+
+  background: linear-gradient(to bottom, #fff280 ,  #FFC700 0%, #ffffff 100%);
+
+
+  
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .containers {
+    margin-top: 80vh; /* Adjust margin for tablets and small screens */
+    padding: 15px; /* Reduce padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .containers {
+    margin-top: 70vh; /* Further adjust margin for mobile screens */
+    padding: 10px; /* Further reduce padding */
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .containers {
+    padding: 1rem 0.5rem;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}

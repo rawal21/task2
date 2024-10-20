@@ -1,0 +1,22 @@
+/* RoadMap.module.css */
+
+/* Title styling */
+.title {
+  color: white;
+  font-size: 10rem;
+  font-family: fantasy;
+  text-align: center; /* Center the title */
+}
+
+/* Image styling for responsiveness */
+.image {
+  max-width: 100%; /* Ensure image is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Ensure better layout on smaller screens */
+@media (max-width: 768px) {
+  .title {
+    font-size: 6rem; /* Reduce title font size on mobile */
+  }
+}

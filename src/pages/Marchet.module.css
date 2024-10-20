@@ -1,0 +1,108 @@
+/* Container for the image gallery */
+.gallery-container {
+  border-radius: 1rem;
+  max-width: 100%; /* Make sure the gallery is responsive */
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Necessary for arrow buttons */
+  transition: background-image 0.5s ease-in-out;
+  padding: 2rem; /* Ensure padding for responsiveness */
+}
+
+/* Center the image inside the gallery */
+.gallery-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling the images */
+.gallery img {
+  width: 100%;
+  max-width: 600px; /* Adjust based on how large you want the images */
+  height: auto; /* Keep aspect ratio */
+  border-radius: 1rem; /* Rounded corners */
+}
+
+/* Navigation buttons for previous and next images */
+.nav-btn {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1; /* Ensure buttons are above the image */
+}
+
+.nav-btn:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.left-arrow {
+  left: 20px; /* Adjust positioning for smaller screens */
+}
+
+.right-arrow {
+  right: 20px; /* Adjust positioning for smaller screens */
+}
+
+/* Title styling */
+.title {
+  font-size: calc(2rem + 4vw);
+  color: #f89d03;
+  font-family: 'fantasy', sans-serif;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .title {
+    font-size: calc(1.5rem + 2vw);
+  }
+
+  .left-arrow, .right-arrow {
+    left: 10px;
+    right: 10px;
+  }
+
+  .gallery img {
+    max-width: 100%; /* Ensure images take full width on small screens */
+  }
+
+  .gallery-container {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: calc(1rem + 2vw);
+  }
+
+  .gallery img {
+    max-width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .nav-btn {
+    font-size: 20px; /* Slightly smaller buttons for small devices */
+  }
+
+  .left-arrow {
+    left: 5px; /* Adjust positioning for smaller screens */
+     width: 1rem;
+     font-size: 0.5rem;
+  }
+
+  .right-arrow {
+    right: 5px; /* Adjust positioning for smaller screens */
+    width: 1rem;
+    font-size: 0.5rem;
+     
+  }
+}

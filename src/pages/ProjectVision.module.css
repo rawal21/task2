@@ -1,0 +1,26 @@
+/* ProjectVision.module.css */
+
+/* Title styling */
+.title {
+  font-size: 10rem;
+  color: white;
+  font-family: fantasy;
+}
+
+/* Image styling for responsiveness */
+.image {
+  max-width: 100%; /* Ensure image is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Text styling */
+.description {
+  color: white; /* Ensure text is white */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .title {
+    font-size: 6rem; /* Reduce title font size on mobile */
+  }
+}

@@ -1,0 +1,67 @@
+/* Container adjustments */
+.container {
+  padding: 2rem 0;
+}
+
+/* Title styling */
+.title {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.highlight {
+  color: #f89d03; /* Color for 'GAMES' */
+}
+
+.preview {
+  color: black;   /* Color for 'PREVIEW' */
+  font-size: 2.5rem; /* Adjust this based on your design preferences */
+}
+
+/* Game image styling */
+.game-img {
+  width: 100%;      /* Make images responsive to column width */
+  max-width: 20rem; /* Restrict maximum size */
+  height: auto;     /* Maintain aspect ratio */
+  margin: 1rem 0;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add slight shadow for elevation */
+}
+
+/* Hover effect for images */
+.game-img:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .game-img {
+    max-width: 15rem; /* Reduce size on smaller screens */
+  }
+
+  .preview {
+    font-size: 2rem;  /* Adjust font size for smaller devices */
+  }
+
+  .title {
+    font-size: 1.8rem;  /* Adjust title size for smaller screens */
+    text-align: center; /* Center the title on smaller screens */
+  }
+
+  .highlight, .preview {
+    display: block; /* Stack 'GAMES' and 'PREVIEW' on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .game-img {
+    max-width: 12rem; /* Further reduce image size on very small screens */
+  }
+
+  .preview {
+    font-size: 1.8rem; /* Adjust font size even smaller for mobile */
+  }
+}

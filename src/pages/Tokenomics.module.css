@@ -1,0 +1,46 @@
+/* Scope all styles to the Tokenomics component */
+.ROW {
+  border: 1px solid black;
+  width: 100%;
+  max-width: 20rem;
+  height: 7rem;
+  background-color: black;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* font-size: 20rem; */
+}
+
+/* h1{
+  font-size: 10rem;
+} */
+
+.head{
+  font-size: 10rem;
+}
+
+/* Ensure a better layout on smaller screens */
+@media (max-width: 768px) {
+  .head {
+    font-size: 3rem; /* Reduce title font size on mobile */
+  }
+
+  .ROW {
+    width: 90%; /* Make row fill more screen space on smaller devices */
+    max-width: 100%; /* Ensure it can expand fully */
+    margin: 1rem 0;
+    height: auto; /* Adapt height to content */
+    padding: 1rem; /* Add padding for better appearance */
+  }
+}
+
+@media (max-width:480px){
+  .head{
+    font-size: 2rem;
+  }
+}

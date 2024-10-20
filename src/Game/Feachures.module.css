@@ -1,0 +1,9 @@
+.feachures{
+  /* position: relative; /* Relative positioning */
+ /* z-index: 2; Below the landing page */
+  /* margin-top: 93vh; */
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.5s ease-in-out;
+ background-color: #1a191e;
+}
